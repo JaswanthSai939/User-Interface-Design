@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Order Placing</title>
+  <style>
+    body {
+      background-image: url('https://shorelinebhs.org/wp-content/uploads/online-payments.jpg');
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
+      opacity: 1;
+    }
+    .weight-dropdown {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+    .radio-group {
+      display: inline-block;
+      margin-right: 10px;
+    }
+
+    .radio-group input[type="radio"] {
+      display: inline-block;
+      vertical-align: middle;
+      margin-right: 5px;
+    }
+
+    .container {
+      background-color: rgba(255, 255, 255, 0.8);
+      padding: 20px;
+      max-width: 600px;
+      margin: 0 auto;
+      margin-top: 100px;
+    }
+
+    h1 {
+      text-align: center;
+      color: #333;
+    }
+
+    label {
+      display: block;
+      margin-bottom: 5px;
+      color: #333;
+    }
+
+    input[type="text"],
+    input[type="number"],
+    input[type="date"],
+    input[type="email"] {
+      width: 100%;
+      padding: 5px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+      margin-bottom: 10px;
+    }
+
+    input[type="radio"] {
+      margin-right: 5px;
+    }
+    .menu-buttons {
+      text-align: center;
+    }
+
+    .menu-buttons button.submit {
+      display: inline-block;
+      background-color: #333;
+      color: #fff;
+      padding: 10px 20px;
+      text-decoration: none;
+      margin-right: 10px;
+      border-radius: 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <form action="confirm.html"></form>
+    <h1>Order Details</h1>
+      <label for="name">Name:</label>
+      <input type="text" id="name" required>
+      <br><br>
+      <label for="phone">Phone Number:</label>
+      <input type="text" id="phone" required>
+      <br><br>
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email"><br><br>
+      <label>Payment Type:</label>
+      <div class="radio-group">
+        <input type="radio" id="card" name="payment" required>
+        <label for="card">Card</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="card" name="payment" required>
+        <label for="card">Cash-On-Delivery</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="cars" name="payment" required>
+        <label for="card">Online</label>
+      </div>
+      <br><br>
+      <label for="w">Address-Details:</label>
+      <br><br>
+      <label for="address">PINCODE</label>
+      <input type="number" id="address" required>
+      <br><br>
+      <label for="address">TOWN/CITY</label>
+      <input type="text" id="address" required>
+      <br><br>
+      <label for="address">STREET</label>
+      <input type="text" id="address" required>
+      <br><br>
+      <label>Payment Method:</label>
+      <div class="radio-group">
+        <input type="radio" id="upi" name="paymentMethod" value="upi" required>
+        <label for="upi">UPI</label>
+      </div>
+      <div class="radio-group">
+        <input type="radio" id="card" name="paymentMethod" value="card" required>
+        <label for="card">Card</label>
+      </div>
+      <br><br>
+      <label for="upiId">UPI ID:</label>
+      <input type="text" id="upiId" required>
+      <br><br>
+      <label for="cardNumber">Card Number:</label>
+      <input type="text" id="cardNumber" required>
+      <br><br>
+      <label for="cardExpiry">Card Expiry Date:</label>
+      <input type="text" id="cardExpiry" required>
+      <br><br>
+      <label for="cvv">CVV:</label>
+      <input type="text" id="cvv" required>
+      <br><br>
+      <div class="menu-buttons">
+        <button class="submit" onclick="paymentForm()">Make payment</button>
+      </div>
+      
+      
+    </form>
+  </div>
+  <script>
+      function paymentForm() {
+        var name = document.getElementById("name").value;
+        var phone = document.getElementById("phone").value;
+        var email = document.getElementById("email").value;
+        var upi = document.getElementById("upi").value;
+        var card = document.getElementById("card").value;
+        var cvv = document.getElementById("cvv").value;
+    
+        if (name !== "" && phone !== "" && email !== "" && upi !== "" && card !== "" && cvv !== "") {
+          console.log("name:", name);
+          console.log("phone:", phone);
+          console.log("email:", email);
+          console.log("upi:", upi);
+          console.log("card:", card);
+          console.log("cvv:", cvv);
+          window.location.href = "print.html"; // Redirect to confirm.html
+        } else {
+          alert("Please fill in all the required fields.");
+        }
+      }
+    </script>
+</body>
+</html>

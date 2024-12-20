@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sports Shopping Page</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color:rgb(0, 0, 0);
+      color: #fff;
+      padding: 10px;
+      text-align: center;
+    }
+
+    #products {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 20px;
+      padding: 20px;
+    }
+
+    .product {
+      border: 1px solid #ddd;
+      padding: 10px;
+      text-align: center;
+    }
+
+    .product img {
+      max-width: 100%;
+      height: auto;
+      margin-bottom: 10px;
+    }
+
+    .product h3 {
+      margin: 0;
+    }
+    a{
+      text-decoration: none;
+    }
+    .kkl a {
+      margin-right: 10px;
+      padding: 5px 10px; 
+      text-decoration: none;
+    }
+    nav{
+      margin-left: 55%;
+        font-size:20px;
+        border-radius: 6px;
+    }
+    .product p {
+      margin: 5px 0;
+    }
+    a{
+      color:aliceblue;
+    }
+    .product button {
+      background-color: #4CAF50;
+      border: none;
+      color: white;
+      padding: 10px 20px;
+      text-align: center;
+      text-decoration: none;
+      display: inline-block;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    .mm{
+      background-color: black;
+      
+    }
+      .kkl{
+        background-color: #4CAF50;
+      }
+    
+  </style>
+</head>
+<body>
+    <header>
+        <nav class="kkl">   
+            <a href="loginafter.html">Home</a>
+            <a href="shopping.html">Shopping</a>
+            <a href="Ranking.html">Ranking</a>
+            <a href="Games.html">Live Score</a>
+            <a href="About.html">About us</a>
+        </nav>
+        <div class="mm">
+        <h1>Sports Shopping</h1>
+      </div>
+      </header>
+
+  <div id="products">
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/3438/7923/SS_Master_9000_Large_Wheelie_Cricket_Kitbag_cricketershop_2__21094.1612854862.jpg?c=1" alt="Product 1">
+      <h3>SS MASTER 9000 LARGE WHEELIE CRICKET KITBAG</h3>
+      <p>6,840 Rupees</p>
+      <button onclick="addToCart('SS MASTER 9000 LARGE WHEELIE CRICKET KITBAG')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/4909/11840/5__94990.1673678086.jpg?c=1" alt="Product 2">
+      <h3>SG RP WHEELIE DUFFLE CRICKET KIT BAG</h3>
+      <p>7,699 Rupees</p>
+      <button onclick="addToCart('SG RP WHEELIE DUFFLE CRICKET KIT BAG')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/5010/11820/5__71775.1673608036.jpg?c=1" alt="Product 3">
+      <h3>MRF VK 18 LIMITED EDITION SHOULDER CRUCKET KIT BAG</h3>
+      <p>4,499 Rupees</p>
+      <button onclick="addToCart('MRF VK 18 LIMITED EDITION SHOULDER CRUCKET KIT BAG')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+    
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/800x800/products/77299/13146/Gray_Nicolls_Gold_Edition_2.0_English_Willow_Cricket_Bat_Size_SH_Cricketershop_1__28476.1685230895.jpg?c=1" alt="Product 4">
+      <h3>GRAY NICOLLS GOLD EDITION 2.0 ENGLISH WILLOW CRICKET BAT SIZE SH</h3>
+      <p>28,999 Rupees</p>
+      <button onclick="addToCart('Gray Nicolls Gold Edition 2.0 English Willow Cricket Bat Size SH')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/77239/13239/SS_Sky_Smasher_Kashmir_Willow_Cricket_Bat_Size-Size_SH_Cricketershop_2__27453.1685362097.jpg?c=1" alt="Product 5">
+        <h3>SS SKY SMASHER KASHMIR WILLOW CRICKET BAT SIZE SH</h3>
+        <p>3,200 Rupees</p>
+        <button onclick="addToCart('SS Sky Smasher Kashmir Willow Cricket Bat Size SH')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/77146/13189/New_Balance_DC_740_English_Willow_Cricket_Bat_Size_SH_Cricketershop_2__95524.1685352925.jpg?c=1" alt="Product 6">
+        <h3>NEW BALANCE DC 740 ENGLISH WILLOW CRICKET BAT SIZE SH</h3>
+        <p>15,999 Rupees</p>
+        <button onclick="addToCart('NEW BALANCE DC 740 ENGLISH WILLOW CRICKET BAT SIZE SH')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/77468/13437/SS_Superlite3__20420__13542.1686748517.jpg?c=1" alt="Product 7">
+        <h3>SS SUPERLITE CRICKET BATTING GLOVES YOUTH SIZE</h3>
+        <p>2,070 Rupees</p>
+        <button onclick="addToCart('SS SUPERLITE CRICKET BATTING GLOVES YOUTH SIZE')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/77244/13287/New_Balance_DC_1280_Navy_Blue_Cricket_Batting_Gloves_Mens_Size_Cricketershop.com_2___42269.1685534530.jpg?c=1" alt="Product 8">
+        <h3>NEW BALANCE DC 1280 NAVY BLUE CRICKET BATTING GLOVES MENS SIZE</h3>
+        <p>4,899 Rupees</p>
+        <button onclick="addToCart('NEW BALANCE DC 1280 NAVY BLUE CRICKET BATTING GLOVES MENS SIZE')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/76816/13328/SS_Ton_Pro_2.0_Cricket_Batting_Gloves_Men_Size-Right_Handed_Cricketershop_1__91497.1686834709.jpg?c=1" alt="Product 9">
+        <h3>SS TON PRO 2.0 CRICKET BATTING GLOVES MENS SIZE-RIGHT HANDED</h3>
+        <p>4,200 Rupees</p>
+        <button onclick="addToCart('SS TON PRO 2.0 CRICKET BATTING GLOVES MENS SIZE-RIGHT HANDED')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/4781/11924/GN-2-3__13032.1673852465.jpg?c=1" alt="Product 10">
+        <h3>SS TON ELITE FULL FINGER CRICKET BATTING INNER GLOVES MENS SIZE</h3>
+        <p>220 Rupees</p>
+        <button onclick="addToCart('SS TON ELITE FULL FINGER CRICKET BATTING INNER GLOVES MENS SIZE')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/4781/11924/GN-2-3__13032.1673852465.jpg?c=1" alt="Product 11">
+        <h3>GRAY-NICOLLS PLAYERS FINGER CRICKET BATTING INNER GLOVES</h3>
+        <p>265 Rupees</p>
+        <button onclick="addToCart('GRAY-NICOLLS PLAYERS FINGER CRICKET BATTING INNER GLOVES')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/76832/13335/SS_TON_Pro_2.0_Wicket_Keeping_Gloves_Mens_Size_Cricketershop_1__84715.1686833722.jpg?c=1" alt="Product 12">
+        <h3>SS TON PRO 2.0 Wicket Keeping Gloves Mens Size</h3>
+        <p>2000 Rupees</p>
+        <button onclick="addToCart('SS TON PRO 2.0 Wicket Keeping Gloves Mens Size')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+
+    <div class="product">
+        <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/76342/12269/NB-TC-3__12458.1673935349.jpg?c=1" alt="Product 13">
+        <h3>NEW BALANCE TC 1260 CRICKET WICKET KEEPING GLOVES MENS SIZE</h3>
+        <p>2500 Rupees</p>
+        <button onclick="addToCart('NEW BALANCE TC 1260 CRICKET WICKET KEEPING GLOVES MENS SIZE')">Add to Cart</button>
+        <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/3975/11015/MatchKitWomenBack_1__16303.1665991057.jpg?c=1" alt="Product 14">
+      <h3>INDAIN T20 FAN EDITION MATCH JERSEY</h3>
+      <p>1999 Rupees</p>
+      <button onclick="addToCart('INDAIN T20 FAN EDITION MATCH JERSEY')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>  
+    </div>
+    <div class="product">
+      <img src="https://cdn11.bigcommerce.com/s-tj87duh98/images/stencil/500x500/products/3975/11015/MatchKitWomenBack_1__16303.1665991057.jpg?c=1" alt="Product 15">
+      <h3>INDAIN T20 PLAYER EDITION MATCH JERSEY</h3>
+      <p>4499 Rupees</p>
+      <button onclick="addToCart('INDAIN T20 PLAYER EDITION MATCH JERSEY')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>  
+    </div>
+    <div class="product">
+      <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADCW5611.jpg" alt="Product 16">
+      <h3>Adidas X Lite Goalkeeper Gloves (Black/Yellow/Black)</h3>
+      <p>1499 Rupees</p>
+      <button onclick="addToCart('Adidas X Lite Goalkeeper Gloves (Black/Yellow/Black)')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>  
+    </div>
+    <div class="product">
+      <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/%7Bwidth%7D,%7Bheight%7D,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFSBB1029.jpg" alt="Product 17">
+      <h3>ADIDAS MESSI 16.4 FXG MEN'S FOOTBALL SHOES</h3>
+      <p>3999 Rupees</p>
+      <button onclick="addToCart('ADIDAS MESSI 16.4 FXG MENS FOOTBALL SHOES')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+    <div class="product">
+      <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADCE8097.jpg" alt="Product 17">
+      <h3>Adidas FIFA World Cup Glider Football</h3>
+      <p>1099 Rupees</p>
+      <button onclick="addToCart('Adidas FIFA World Cup Glider Football')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button> 
+    </div>
+    <div class="product">
+      <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/ADFB10120.jpg" alt="Product 18">
+      <h3>Adidas 4ft Pop Up Goal</h3>
+      <p>2999 Rupees</p>
+      <button onclick="addToCart('Adidas 4ft Pop Up Goal')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+    <div class="product">
+      <img src="https://storage.sg.content-cdn.io/cdn-cgi/image/width=500,height=500,quality=75,format=auto,fit=cover,g=top/in-resources/b368029c-a4dd-448a-a888-58348cb1b144/Images/ProductImages/Source/NK776850-415.jpg" alt="Product 19">
+      <h3>Nike FC Barcelona Home Jersey 2016/17</h3>
+      <p>2799 Rupees</p>
+      <button onclick="addToCart('Nike FC Barcelona Home Jersey 2016/17')">Add to Cart</button>
+      <button class="submit"><a href="Payment.html">Add to Buy</a></button>
+    </div>
+    </div>
+   
+
+  <script>
+    function addToCart(productName) {
+      alert(productName + ' added to cart!');
+    }
+  </script>
+</body>
+</html>

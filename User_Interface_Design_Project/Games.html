@@ -1,0 +1,106 @@
+<html>
+    <head>
+    <title>Live Scores</title>
+    <style>
+        body{
+            background-image: url(https://wallpapercave.com/wp/wp2839207.jpg);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+         nav {
+            background-color:lightblue;
+            color: #fff;
+            padding-top:0px;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: right;
+        }
+
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color:black;
+            padding: 5px;
+            font-size:20px;
+            font-weight:bold;
+        }
+        .container {
+            padding-top:10px;
+            margin: 20px ;
+            text-align: center;
+            font-size:30px;
+        }
+        h1{
+            text-align: center;
+        }
+        ul{
+            text-decoration: none; 
+        }
+        header{
+            font-size: 50px;
+        }
+        footer {
+            color:black;
+            padding: 20px;
+            text-align: center;
+            font-size:20px;
+        }
+        footer{
+            margin-top:250px;
+        }
+        img{
+            height:50px;
+            width:50px;
+        }
+    </style>
+    <script>
+       function bigImg(x) {
+  x.style.height = "100px";
+  x.style.width = "100px";
+}
+
+function normalImg(x) {
+  x.style.height = "50px";
+  x.style.width = "50px";
+} 
+    </script>
+    </head>
+    <body>
+        <nav>
+            <ul>
+                <li><a href="loginafter.html">Home</a></li>
+                <li><a href="shopping.html">shopping</a></li>
+                <li><a href="Ranking.html">Rankings</a></li>
+                <li><a href="Games.html">Live Score</a></li>
+                <li><a href="About.html">About</a></li>
+            </ul>
+        </nav>
+        <header>
+        <h1>Sports</h1>
+        </header>
+        <div class="container">
+            <a style="text-decoration: none;"href="https://www.cricbuzz.com/">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://wallpapercave.com/wp/wp6916141.png" alt="Smiley"> 
+            Cricket</a><br>
+            <a style="text-decoration: none;"href="https://www.goal.com/en-in/live-scores">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://openclipart.org/image/2400px/svg_to_png/241330/Soccer-Logo.png" alt="Smiley"> 
+            FootBall</a><br>
+            <a style="text-decoration: none;"href="https://www.livescore.com/en/basketball/">
+            <img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="https://clipground.com/images/imagenes-de-logos-clipart-8.jpg" alt="Smiley">
+            BasketBall</a>
+        </div>
+        <footer>
+        &copy; 2023 Game Website. All rights reserved.
+        </footer>
+    </body>
+</html>
